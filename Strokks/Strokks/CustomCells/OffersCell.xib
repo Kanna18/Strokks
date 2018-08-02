@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="KGk-i7-Jjw" customClass="OffersCell" customModule="sampleAPPContent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lew-0l-lXf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="126.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s32-As-ecR" customClass="ButtonClass" customModule="sampleAPPContent" customModuleProvider="target">
+                                <rect key="frame" x="20" y="5" width="140" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="LZU-Fk-Jxh"/>
+                                    <constraint firstAttribute="height" constant="30" id="f83-HH-7ky"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="COUPON CODE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Free Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn2-Di-pY2" customClass="LabelClass" customModule="sampleAPPContent" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="140" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="lYh-y0-xcg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use code COUPON CODE &amp; get free delivery on all orders above $.99. Offer valid only from 6am to 11pm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giw-ZH-7fI" customClass="LabelClass" customModule="sampleAPPContent" customModuleProvider="target">
+                                <rect key="frame" x="20" y="62" width="298" height="59.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s32-As-ecR" firstAttribute="leading" secondItem="lew-0l-lXf" secondAttribute="leading" constant="20" id="0iV-yc-AQi"/>
+                            <constraint firstItem="giw-ZH-7fI" firstAttribute="top" secondItem="bn2-Di-pY2" secondAttribute="bottom" constant="2" id="3tz-bv-tKf"/>
+                            <constraint firstItem="bn2-Di-pY2" firstAttribute="top" secondItem="s32-As-ecR" secondAttribute="bottom" constant="5" id="6m9-PK-7Zu"/>
+                            <constraint firstItem="s32-As-ecR" firstAttribute="top" secondItem="lew-0l-lXf" secondAttribute="top" constant="5" id="KHF-Mg-SvF"/>
+                            <constraint firstItem="bn2-Di-pY2" firstAttribute="width" secondItem="s32-As-ecR" secondAttribute="width" id="Ner-Xc-y8l"/>
+                            <constraint firstAttribute="trailing" secondItem="giw-ZH-7fI" secondAttribute="trailing" constant="2" id="gO3-pO-oXD"/>
+                            <constraint firstAttribute="bottom" secondItem="giw-ZH-7fI" secondAttribute="bottom" constant="5" id="lVy-aB-Phe"/>
+                            <constraint firstItem="bn2-Di-pY2" firstAttribute="leading" secondItem="s32-As-ecR" secondAttribute="leading" id="nuh-H8-kJT"/>
+                            <constraint firstItem="giw-ZH-7fI" firstAttribute="leading" secondItem="s32-As-ecR" secondAttribute="leading" id="rjt-Bw-JF8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lew-0l-lXf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Yn-db-Qiq"/>
+                    <constraint firstItem="lew-0l-lXf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Chb-5y-ZwV"/>
+                    <constraint firstAttribute="bottom" secondItem="lew-0l-lXf" secondAttribute="bottom" id="tPn-qH-nZA"/>
+                    <constraint firstAttribute="trailing" secondItem="lew-0l-lXf" secondAttribute="trailing" id="xJp-yf-ebn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnCoupon" destination="s32-As-ecR" id="ocg-Pe-FCK"/>
+                <outlet property="lblDealInfo" destination="giw-ZH-7fI" id="iHX-pN-I6w"/>
+                <outlet property="lblDealName" destination="bn2-Di-pY2" id="nFt-ju-V0e"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="95.5"/>
+        </tableViewCell>
+    </objects>
+</document>
