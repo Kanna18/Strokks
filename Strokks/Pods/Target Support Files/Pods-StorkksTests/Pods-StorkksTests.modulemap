@@ -1,0 +1,6 @@
+framework module Pods_StorkksTests {
+  umbrella header "Pods-StorkksTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
