@@ -10,6 +10,8 @@
 		1320DBCCF7B4996B28DA4C30 /* Pods_Storkks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B6C1DC5E6401A3DCA7A7C4 /* Pods_Storkks.framework */; };
 		33B04CE487B8D0E1CB51BB90 /* Pods_StorkksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC7065208A16C41E8CC0548 /* Pods_StorkksTests.framework */; };
 		9C8328C5CB35E66DC578C68A /* Pods_StorkksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7759B1F5CC4B4B2343387A3 /* Pods_StorkksUITests.framework */; };
+		F62ACD3C2133D4AE00679B07 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */; };
+		F62ACD3E2133D50600679B07 /* RegistrationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62ACD3D2133D50600679B07 /* RegistrationView.xib */; };
 		F631BAEB212180A500E19C48 /* StorksWebserviceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F631BAEA212180A500E19C48 /* StorksWebserviceCalls.swift */; };
 		F631BAEE21218B7000E19C48 /* RestaurantsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F631BAED21218B7000E19C48 /* RestaurantsData.swift */; };
 		F631BAF121218D8D00E19C48 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F631BAF021218D8D00E19C48 /* Constants.swift */; };
@@ -79,6 +81,8 @@
 		48BD3779BB7B8164F57FC65D /* Pods-Storkks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storkks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Storkks/Pods-Storkks.debug.xcconfig"; sourceTree = "<group>"; };
 		B7759B1F5CC4B4B2343387A3 /* Pods_StorkksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorkksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF301EAECEFBFDA4B3D56EFD /* Pods-Storkks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storkks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Storkks/Pods-Storkks.release.xcconfig"; sourceTree = "<group>"; };
+		F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F62ACD3D2133D50600679B07 /* RegistrationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationView.xib; sourceTree = "<group>"; };
 		F631BAEA212180A500E19C48 /* StorksWebserviceCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorksWebserviceCalls.swift; sourceTree = "<group>"; };
 		F631BAED21218B7000E19C48 /* RestaurantsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsData.swift; sourceTree = "<group>"; };
 		F631BAF021218D8D00E19C48 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -318,6 +322,8 @@
 				F6A6F26D2122DE630073A94F /* ShopDetailsView.xib */,
 				F6A6F26F2122E48A0073A94F /* TableHeaderView.swift */,
 				F6A6F2712122E4980073A94F /* TableHeaderView.xib */,
+				F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */,
+				F62ACD3D2133D50600679B07 /* RegistrationView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 				F6BDE6992112E54C00564E8F /* ItemDetails2Cell.xib in Resources */,
 				F6BDE6972112E54C00564E8F /* ItemDetailsCell.xib in Resources */,
 				F6A6F2682122CF4F0073A94F /* TopView.xib in Resources */,
+				F62ACD3E2133D50600679B07 /* RegistrationView.xib in Resources */,
 				F6BDE65D2112E50200564E8F /* Assets.xcassets in Resources */,
 				F6BDE6582112E50100564E8F /* Main.storyboard in Resources */,
 				F6BDE6A72113128D00564E8F /* DealBannerView.xib in Resources */,
@@ -558,6 +565,7 @@
 				F6BDE6A62113128D00564E8F /* DealBannerView.swift in Sources */,
 				F6BDE69B2112E54C00564E8F /* AddressCell.swift in Sources */,
 				F631BAF121218D8D00E19C48 /* Constants.swift in Sources */,
+				F62ACD3C2133D4AE00679B07 /* RegistrationView.swift in Sources */,
 				F65EFF1F211D558600DF93AF /* SideMenuViewController.swift in Sources */,
 				F6BDE6932112E54C00564E8F /* ItemDetails2Cell.swift in Sources */,
 				F65EFF1D211D54FC00DF93AF /* SWRevealViewController.m in Sources */,

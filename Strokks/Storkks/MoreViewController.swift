@@ -39,6 +39,8 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     //MARK: Tableview methods
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.displayRegistration()
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -65,5 +67,18 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return 44
+    }
+    func displayRegistration()
+    {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let regView = RegistrationView.init(frame: CGRect(x: 0, y: 0, width: (appDelegate.window?.frame.size.width)!, height:  (appDelegate.window?.frame.size.height)!))
+        appDelegate.window?.addSubview((regView))
+        regView.alpha = 0
+        regView.isHidden = true
+        regView.backgroundColor = UIColor.red
+        UIView.animate(withDuration: 0.3, delay: 0, options: .transitionCrossDissolve, animations: {
+            regView.isHidden = false
+            regView.alpha = 1
+        }, completion: nil)
     }
 }
