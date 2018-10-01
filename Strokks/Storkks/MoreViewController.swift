@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITabBarDelegate,UITabBarControllerDelegate {
 
     @IBOutlet weak var tblMore: UITableView!
     @IBOutlet weak var lblName: UILabel!
@@ -20,7 +20,12 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.tblMore.tableFooterView = UIView(frame: .zero)
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,12 +44,29 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     //MARK: Tableview methods
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        self.displayRegistration()
+//        self.displayRegistration()
+        if indexPath.row == 0{
+            self.tabBarController?.selectedIndex = 0
+        }
+        if indexPath.row == 1{
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        if indexPath.row == 1{
+            self.loadAddressVC()
+        }
+        if indexPath.row == 2{
+            self.loadOrdersVC()
+        }
+        if indexPath.row == 3{
+            self.loadFavouritesVC()
+        }
+        if indexPath.row == 4{
+            self.loadOffersTableVC()
+        }
 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return self.arrSource.count;
         
     }
@@ -81,4 +103,22 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             regView.alpha = 1
         }, completion: nil)
     }
+    func loadOffersTableVC(){
+        let offer = self.storyboard?.instantiateViewController(withIdentifier: "offersTVC") as! OffersTableViewController        
+        self.navigationController?.pushViewController(offer, animated: true)
+    }
+    func loadAddressVC(){
+        let address = self.storyboard?.instantiateViewController(withIdentifier: "addressVC") as! AddressViewController
+        self.navigationController?.pushViewController(address, animated: true)
+    }
+    func loadOrdersVC(){
+        let orders = self.storyboard?.instantiateViewController(withIdentifier: "ordersVC") as! OrdersViewController
+        self.navigationController?.pushViewController(orders, animated: true)
+    }
+    func loadFavouritesVC(){
+        let favourites = self.storyboard?.instantiateViewController(withIdentifier: "favoutitesVC") as! FavoutitesViewController
+        self.navigationController?.pushViewController(favourites, animated: true)
+    }
+    
+    
 }

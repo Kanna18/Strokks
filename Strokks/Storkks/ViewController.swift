@@ -37,11 +37,23 @@ class ViewController: UIViewController,UIScrollViewDelegate,UITableViewDataSourc
         }
         // Do any additional setup after loading the view, typically from a nib.
         let nib = UINib(nibName: "ItemDetailsCell", bundle: nil)
-        self.tblRestaurants .register(nib, forCellReuseIdentifier: "ItemDetailsCell")
+        self.tblRestaurants .register(nib, forCellReuseIdentifier: "itemDetailsCell")
         self.showPromotionView()
         self.getRestaurantsData()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.setImageView()
+    }
 
+    func setImageView(){
+        var imgVw = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: promoScrollView.frame.size.width, height: promoScrollView.frame.size.height))
+        promoScrollView.addSubview(imgVw)
+        imgVw.image = UIImage.init(named: "kfc.jpg")
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -128,6 +140,7 @@ class ViewController: UIViewController,UIScrollViewDelegate,UITableViewDataSourc
         let imageURL = baseURL! + (shop?.shop_logo)!
         detailsVC.imagePath = imageURL
         detailsVC.shop = shop
+        detailsVC.restaurantDetails = list![indexPath.row] as? RestaurantsData.shop
         self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     
@@ -146,13 +159,13 @@ class ViewController: UIViewController,UIScrollViewDelegate,UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell:ItemDetailsCell? = tableView.dequeueReusableCell(withIdentifier: "ItemDetailsCell", for: indexPath) as? ItemDetailsCell
+        var cell:ItemDetailsCell? = tableView.dequeueReusableCell(withIdentifier: "itemDetailsCell", for: indexPath) as? ItemDetailsCell
         if cell == nil
         {
             cell = ItemDetailsCell()
         }
         
-        cell?.selectionStyle = UITableViewCellSelectionStyle.default
+        cell?.selectionStyle = UITableViewCellSelectionStyle.gray    
         let list = self.shopsData?.value(forKey:"list") as? NSArray
         let shop = list![indexPath.row] as? RestaurantsData.shop
         cell?.LblName.text =  shop?.name

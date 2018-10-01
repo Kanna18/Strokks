@@ -32,7 +32,8 @@ class CategoriesData: NSObject {
         let cat_close: String
         let cat_order: String
         let status: String
-                
+        var selectedCell : Bool?
+        var countOfSubCells : Int?
     }
     
 }

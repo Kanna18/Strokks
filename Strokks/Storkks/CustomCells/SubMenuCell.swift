@@ -1,24 +1,18 @@
 //
-//  AddressCell.swift
-//  sampleAPPContent
+//  SubMenuCell.swift
+//  Storkks
 //
-//  Created by gaian  on 8/1/18.
+//  Created by Gaian on 30/09/18.
 //  Copyright © 2018 gaian . All rights reserved.
 //
 
 import UIKit
 
-class AddressCell: UITableViewCell {
-    @IBOutlet weak var imgView: UIImageView!
-    
-    @IBOutlet weak var BtnDelete: ButtonClass!
-    @IBOutlet weak var btnEdit: ButtonClass!
-    @IBOutlet weak var LblAddress: LabelClass!
-    @IBOutlet weak var LblHome: LabelClass!
+class SubMenuCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,6 +22,3 @@ class AddressCell: UITableViewCell {
     }
     
 }
-
-
-

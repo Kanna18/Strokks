@@ -30,11 +30,6 @@ struct ServiceDataConst {
     static var kShopsURL: String {
         return kRootURL + "shops"
     }
-    static var kShopsCatURL: String {
-        
-        return kRootURL + "Shopcategories/"
-     
-    }
     static var kShopItemsBycatURL: String {
          return kRootURL + "ShopItemsBycat"
         
@@ -71,6 +66,13 @@ struct ServiceDataConst {
         return kRootURL + "Delete_cart"
     }
     
+    static var kCuisin: String {
+        return kRootURL + "Cuisins"
+    }
+    static var krestaurantCategory: String {
+        return kRootURL + "Shopcategories"
+    }
+        
 }
 
 

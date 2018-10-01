@@ -10,6 +10,9 @@
 		1320DBCCF7B4996B28DA4C30 /* Pods_Storkks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B6C1DC5E6401A3DCA7A7C4 /* Pods_Storkks.framework */; };
 		33B04CE487B8D0E1CB51BB90 /* Pods_StorkksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC7065208A16C41E8CC0548 /* Pods_StorkksTests.framework */; };
 		9C8328C5CB35E66DC578C68A /* Pods_StorkksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7759B1F5CC4B4B2343387A3 /* Pods_StorkksUITests.framework */; };
+		F61124A52160F0B400901694 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61124A42160F0B400901694 /* SampleViewController.swift */; };
+		F62901C42160EB7F00BE2DCF /* SubMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62901C22160EB7F00BE2DCF /* SubMenuCell.swift */; };
+		F62901C52160EB7F00BE2DCF /* SubMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62901C32160EB7F00BE2DCF /* SubMenuCell.xib */; };
 		F62ACD3C2133D4AE00679B07 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */; };
 		F62ACD3E2133D50600679B07 /* RegistrationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62ACD3D2133D50600679B07 /* RegistrationView.xib */; };
 		F631BAEB212180A500E19C48 /* StorksWebserviceCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F631BAEA212180A500E19C48 /* StorksWebserviceCalls.swift */; };
@@ -21,6 +24,9 @@
 		F65EFF1F211D558600DF93AF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65EFF1E211D558600DF93AF /* SideMenuViewController.swift */; };
 		F65EFF21211D5D6800DF93AF /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65EFF20211D5D6700DF93AF /* AccountsViewController.swift */; };
 		F68C7CB721229DCA001ACDCB /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C7CB621229DC9001ACDCB /* ExploreViewController.swift */; };
+		F69258A52148E5920043F892 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69258A42148E5920043F892 /* OffersTableViewController.swift */; };
+		F696B837215232B4002F487B /* CategoriesSubList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696B836215232B4002F487B /* CategoriesSubList.swift */; };
+		F696B83921539C0F002F487B /* StorkksSharedClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F696B83821539C0F002F487B /* StorkksSharedClass.swift */; };
 		F6A6F2642122BB4B0073A94F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F2632122BB4B0073A94F /* DetailsViewController.swift */; };
 		F6A6F2662122CF410073A94F /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F2652122CF410073A94F /* TopView.swift */; };
 		F6A6F2682122CF4F0073A94F /* TopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A6F2672122CF4F0073A94F /* TopView.xib */; };
@@ -30,6 +36,11 @@
 		F6A6F2702122E48A0073A94F /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F26F2122E48A0073A94F /* TableHeaderView.swift */; };
 		F6A6F2722122E4980073A94F /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A6F2712122E4980073A94F /* TableHeaderView.xib */; };
 		F6A6F2742122FCEF0073A94F /* CategoriesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A6F2732122FCEF0073A94F /* CategoriesData.swift */; };
+		F6B2A94021600CD00087ED85 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B2A93F21600CD00087ED85 /* OrdersViewController.swift */; };
+		F6B2A942216011DE0087ED85 /* mrcb.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B2A941216011DD0087ED85 /* mrcb.png */; };
+		F6B2A944216067F30087ED85 /* FavoutitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B2A943216067F30087ED85 /* FavoutitesViewController.swift */; };
+		F6B2A948216072B10087ED85 /* MyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B2A947216072B10087ED85 /* MyTabBarViewController.swift */; };
+		F6B2A94A21607F370087ED85 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B2A94921607F360087ED85 /* menu.png */; };
 		F6BDE6532112E50100564E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDE6522112E50100564E8F /* AppDelegate.swift */; };
 		F6BDE6552112E50100564E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDE6542112E50100564E8F /* ViewController.swift */; };
 		F6BDE6582112E50100564E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BDE6562112E50100564E8F /* Main.storyboard */; };
@@ -54,6 +65,16 @@
 		F6BDE6A22113117700564E8F /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDE6A12113117700564E8F /* DeviceManager.swift */; };
 		F6BDE6A62113128D00564E8F /* DealBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BDE6A42113128D00564E8F /* DealBannerView.swift */; };
 		F6BDE6A72113128D00564E8F /* DealBannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6BDE6A52113128D00564E8F /* DealBannerView.xib */; };
+		F6C57C532154DA5100970DC3 /* CartClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C57C522154DA5100970DC3 /* CartClass.swift */; };
+		F6C57E1D215F815800970DC3 /* kfc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6C57E1C215F815800970DC3 /* kfc.jpg */; };
+		F6C57E22216005A400970DC3 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C57E21216005A400970DC3 /* AddressViewController.swift */; };
+		F6CC895D214FC02A00EFC9EB /* SideMenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC895C214FC02A00EFC9EB /* SideMenuData.swift */; };
+		F6CC896021512EC100EFC9EB /* DetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC895E21512EC100EFC9EB /* DetailsCell.swift */; };
+		F6CC896121512EC100EFC9EB /* DetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6CC895F21512EC100EFC9EB /* DetailsCell.xib */; };
+		F6CC8964215130F000EFC9EB /* DetailsCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC8962215130F000EFC9EB /* DetailsCellOne.swift */; };
+		F6CC8965215130F000EFC9EB /* DetailsCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6CC8963215130F000EFC9EB /* DetailsCellOne.xib */; };
+		F6CC8967215139A300EFC9EB /* DetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CC8966215139A300EFC9EB /* DetailsHeaderView.swift */; };
+		F6CC8969215139BB00EFC9EB /* DetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6CC8968215139BB00EFC9EB /* DetailsHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +102,9 @@
 		48BD3779BB7B8164F57FC65D /* Pods-Storkks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storkks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Storkks/Pods-Storkks.debug.xcconfig"; sourceTree = "<group>"; };
 		B7759B1F5CC4B4B2343387A3 /* Pods_StorkksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorkksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF301EAECEFBFDA4B3D56EFD /* Pods-Storkks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storkks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Storkks/Pods-Storkks.release.xcconfig"; sourceTree = "<group>"; };
+		F61124A42160F0B400901694 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		F62901C22160EB7F00BE2DCF /* SubMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuCell.swift; sourceTree = "<group>"; };
+		F62901C32160EB7F00BE2DCF /* SubMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuCell.xib; sourceTree = "<group>"; };
 		F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		F62ACD3D2133D50600679B07 /* RegistrationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationView.xib; sourceTree = "<group>"; };
 		F631BAEA212180A500E19C48 /* StorksWebserviceCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorksWebserviceCalls.swift; sourceTree = "<group>"; };
@@ -94,6 +118,9 @@
 		F65EFF1E211D558600DF93AF /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		F65EFF20211D5D6700DF93AF /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		F68C7CB621229DC9001ACDCB /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		F69258A42148E5920043F892 /* OffersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersTableViewController.swift; sourceTree = "<group>"; };
+		F696B836215232B4002F487B /* CategoriesSubList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesSubList.swift; sourceTree = "<group>"; };
+		F696B83821539C0F002F487B /* StorkksSharedClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorkksSharedClass.swift; sourceTree = "<group>"; };
 		F6A6F2632122BB4B0073A94F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		F6A6F2652122CF410073A94F /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		F6A6F2672122CF4F0073A94F /* TopView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopView.xib; sourceTree = "<group>"; };
@@ -103,6 +130,11 @@
 		F6A6F26F2122E48A0073A94F /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		F6A6F2712122E4980073A94F /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
 		F6A6F2732122FCEF0073A94F /* CategoriesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesData.swift; sourceTree = "<group>"; };
+		F6B2A93F21600CD00087ED85 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		F6B2A941216011DD0087ED85 /* mrcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mrcb.png; sourceTree = "<group>"; };
+		F6B2A943216067F30087ED85 /* FavoutitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoutitesViewController.swift; sourceTree = "<group>"; };
+		F6B2A947216072B10087ED85 /* MyTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarViewController.swift; sourceTree = "<group>"; };
+		F6B2A94921607F360087ED85 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		F6BDE64F2112E50100564E8F /* Storkks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storkks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BDE6522112E50100564E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6BDE6542112E50100564E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +165,16 @@
 		F6BDE6A12113117700564E8F /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 		F6BDE6A42113128D00564E8F /* DealBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealBannerView.swift; sourceTree = "<group>"; };
 		F6BDE6A52113128D00564E8F /* DealBannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealBannerView.xib; sourceTree = "<group>"; };
+		F6C57C522154DA5100970DC3 /* CartClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartClass.swift; sourceTree = "<group>"; };
+		F6C57E1C215F815800970DC3 /* kfc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kfc.jpg; sourceTree = "<group>"; };
+		F6C57E21216005A400970DC3 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		F6CC895C214FC02A00EFC9EB /* SideMenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuData.swift; sourceTree = "<group>"; };
+		F6CC895E21512EC100EFC9EB /* DetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCell.swift; sourceTree = "<group>"; };
+		F6CC895F21512EC100EFC9EB /* DetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCell.xib; sourceTree = "<group>"; };
+		F6CC8962215130F000EFC9EB /* DetailsCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCellOne.swift; sourceTree = "<group>"; };
+		F6CC8963215130F000EFC9EB /* DetailsCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsCellOne.xib; sourceTree = "<group>"; };
+		F6CC8966215139A300EFC9EB /* DetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderView.swift; sourceTree = "<group>"; };
+		F6CC8968215139BB00EFC9EB /* DetailsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsHeaderView.xib; sourceTree = "<group>"; };
 		F96924D2D4E0E9EDA84CD1F6 /* Pods-StorkksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorkksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StorkksUITests/Pods-StorkksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC7065208A16C41E8CC0548 /* Pods_StorkksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorkksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -201,6 +243,9 @@
 			children = (
 				F631BAED21218B7000E19C48 /* RestaurantsData.swift */,
 				F6A6F2732122FCEF0073A94F /* CategoriesData.swift */,
+				F6CC895C214FC02A00EFC9EB /* SideMenuData.swift */,
+				F696B836215232B4002F487B /* CategoriesSubList.swift */,
+				F6C57C522154DA5100970DC3 /* CartClass.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -209,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				F631BAF021218D8D00E19C48 /* Constants.swift */,
+				F696B83821539C0F002F487B /* StorkksSharedClass.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -249,6 +295,9 @@
 		F6BDE6512112E50100564E8F /* Storkks */ = {
 			isa = PBXGroup;
 			children = (
+				F6C57E1C215F815800970DC3 /* kfc.jpg */,
+				F6B2A941216011DD0087ED85 /* mrcb.png */,
+				F6B2A94921607F360087ED85 /* menu.png */,
 				F631BAEF21218D7C00E19C48 /* Utils */,
 				F631BAEC2121874600E19C48 /* DataModels */,
 				F631BAE92121808B00E19C48 /* ServiceCalls */,
@@ -263,10 +312,16 @@
 				F6BDE6612112E50200564E8F /* Info.plist */,
 				F6BDE6A12113117700564E8F /* DeviceManager.swift */,
 				F6502509211854A70015AE67 /* MoreViewController.swift */,
+				F6B2A947216072B10087ED85 /* MyTabBarViewController.swift */,
 				F650250B211854B80015AE67 /* BasketViewController.swift */,
 				F65EFF20211D5D6700DF93AF /* AccountsViewController.swift */,
+				F6C57E21216005A400970DC3 /* AddressViewController.swift */,
 				F68C7CB621229DC9001ACDCB /* ExploreViewController.swift */,
 				F6A6F2632122BB4B0073A94F /* DetailsViewController.swift */,
+				F61124A42160F0B400901694 /* SampleViewController.swift */,
+				F69258A42148E5920043F892 /* OffersTableViewController.swift */,
+				F6B2A943216067F30087ED85 /* FavoutitesViewController.swift */,
+				F6B2A93F21600CD00087ED85 /* OrdersViewController.swift */,
 			);
 			path = Storkks;
 			sourceTree = "<group>";
@@ -292,6 +347,10 @@
 		F6BDE6842112E51600564E8F /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				F6CC8962215130F000EFC9EB /* DetailsCellOne.swift */,
+				F6CC8963215130F000EFC9EB /* DetailsCellOne.xib */,
+				F6CC895E21512EC100EFC9EB /* DetailsCell.swift */,
+				F6CC895F21512EC100EFC9EB /* DetailsCell.xib */,
 				F6BDE68D2112E54B00564E8F /* AddressCell.swift */,
 				F6BDE6882112E54B00564E8F /* AddressCell.xib */,
 				F6BDE6922112E54C00564E8F /* ButtonClass.swift */,
@@ -306,6 +365,8 @@
 				F6BDE6862112E54A00564E8F /* OffersCell.xib */,
 				F6BDE68F2112E54B00564E8F /* OrdersCell.swift */,
 				F6BDE68A2112E54B00564E8F /* OrdersCell.xib */,
+				F62901C22160EB7F00BE2DCF /* SubMenuCell.swift */,
+				F62901C32160EB7F00BE2DCF /* SubMenuCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -324,6 +385,8 @@
 				F6A6F2712122E4980073A94F /* TableHeaderView.xib */,
 				F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */,
 				F62ACD3D2133D50600679B07 /* RegistrationView.xib */,
+				F6CC8966215139A300EFC9EB /* DetailsHeaderView.swift */,
+				F6CC8968215139BB00EFC9EB /* DetailsHeaderView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -437,18 +500,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CC8969215139BB00EFC9EB /* DetailsHeaderView.xib in Resources */,
 				F6A6F26E2122DE630073A94F /* ShopDetailsView.xib in Resources */,
 				F6BDE6942112E54C00564E8F /* OffersCell.xib in Resources */,
 				F6BDE6962112E54C00564E8F /* AddressCell.xib in Resources */,
 				F6BDE6982112E54C00564E8F /* OrdersCell.xib in Resources */,
 				F6A6F2722122E4980073A94F /* TableHeaderView.xib in Resources */,
+				F6C57E1D215F815800970DC3 /* kfc.jpg in Resources */,
+				F62901C52160EB7F00BE2DCF /* SubMenuCell.xib in Resources */,
 				F6BDE6602112E50200564E8F /* LaunchScreen.storyboard in Resources */,
 				F6BDE6992112E54C00564E8F /* ItemDetails2Cell.xib in Resources */,
+				F6CC8965215130F000EFC9EB /* DetailsCellOne.xib in Resources */,
 				F6BDE6972112E54C00564E8F /* ItemDetailsCell.xib in Resources */,
+				F6B2A942216011DE0087ED85 /* mrcb.png in Resources */,
+				F6B2A94A21607F370087ED85 /* menu.png in Resources */,
 				F6A6F2682122CF4F0073A94F /* TopView.xib in Resources */,
 				F62ACD3E2133D50600679B07 /* RegistrationView.xib in Resources */,
 				F6BDE65D2112E50200564E8F /* Assets.xcassets in Resources */,
 				F6BDE6582112E50100564E8F /* Main.storyboard in Resources */,
+				F6CC896121512EC100EFC9EB /* DetailsCell.xib in Resources */,
 				F6BDE6A72113128D00564E8F /* DealBannerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +621,7 @@
 			files = (
 				F650250C211854B80015AE67 /* BasketViewController.swift in Sources */,
 				F6A6F2642122BB4B0073A94F /* DetailsViewController.swift in Sources */,
+				F61124A52160F0B400901694 /* SampleViewController.swift in Sources */,
 				F6BDE69A2112E54C00564E8F /* OffersCell.swift in Sources */,
 				F6A6F26A2122D0300073A94F /* ButtonWithImage.swift in Sources */,
 				F6BDE69C2112E54C00564E8F /* LabelInfoClass.swift in Sources */,
@@ -559,23 +630,36 @@
 				F6BDE69F2112E54C00564E8F /* LabelClass.swift in Sources */,
 				F650250A211854A70015AE67 /* MoreViewController.swift in Sources */,
 				F6A6F2702122E48A0073A94F /* TableHeaderView.swift in Sources */,
+				F62901C42160EB7F00BE2DCF /* SubMenuCell.swift in Sources */,
 				F631BAEE21218B7000E19C48 /* RestaurantsData.swift in Sources */,
 				F6BDE69D2112E54C00564E8F /* OrdersCell.swift in Sources */,
 				F6BDE6A22113117700564E8F /* DeviceManager.swift in Sources */,
+				F696B83921539C0F002F487B /* StorkksSharedClass.swift in Sources */,
+				F6CC895D214FC02A00EFC9EB /* SideMenuData.swift in Sources */,
 				F6BDE6A62113128D00564E8F /* DealBannerView.swift in Sources */,
 				F6BDE69B2112E54C00564E8F /* AddressCell.swift in Sources */,
 				F631BAF121218D8D00E19C48 /* Constants.swift in Sources */,
+				F6B2A944216067F30087ED85 /* FavoutitesViewController.swift in Sources */,
 				F62ACD3C2133D4AE00679B07 /* RegistrationView.swift in Sources */,
+				F696B837215232B4002F487B /* CategoriesSubList.swift in Sources */,
+				F6CC896021512EC100EFC9EB /* DetailsCell.swift in Sources */,
 				F65EFF1F211D558600DF93AF /* SideMenuViewController.swift in Sources */,
+				F6B2A948216072B10087ED85 /* MyTabBarViewController.swift in Sources */,
+				F6B2A94021600CD00087ED85 /* OrdersViewController.swift in Sources */,
 				F6BDE6932112E54C00564E8F /* ItemDetails2Cell.swift in Sources */,
 				F65EFF1D211D54FC00DF93AF /* SWRevealViewController.m in Sources */,
+				F6CC8967215139A300EFC9EB /* DetailsHeaderView.swift in Sources */,
 				F6BDE69E2112E54C00564E8F /* LabelNameClass.swift in Sources */,
+				F6CC8964215130F000EFC9EB /* DetailsCellOne.swift in Sources */,
 				F6BDE6552112E50100564E8F /* ViewController.swift in Sources */,
 				F6BDE6532112E50100564E8F /* AppDelegate.swift in Sources */,
+				F6C57E22216005A400970DC3 /* AddressViewController.swift in Sources */,
 				F65EFF21211D5D6800DF93AF /* AccountsViewController.swift in Sources */,
 				F6BDE6952112E54C00564E8F /* ItemDetailsCell.swift in Sources */,
 				F68C7CB721229DCA001ACDCB /* ExploreViewController.swift in Sources */,
+				F69258A52148E5920043F892 /* OffersTableViewController.swift in Sources */,
 				F6A6F2662122CF410073A94F /* TopView.swift in Sources */,
+				F6C57C532154DA5100970DC3 /* CartClass.swift in Sources */,
 				F631BAEB212180A500E19C48 /* StorksWebserviceCalls.swift in Sources */,
 				F6A6F2742122FCEF0073A94F /* CategoriesData.swift in Sources */,
 			);
