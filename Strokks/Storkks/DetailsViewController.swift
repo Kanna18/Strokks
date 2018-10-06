@@ -48,7 +48,7 @@ class DetailsViewController: UIViewController,UITableViewDelegate,UITableViewDat
 //        tblCategory.register(UINib.init(nibName: "SubMenuCell", bundle: nil), forHeaderFooterViewReuseIdentifier: "subMenuCell")
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+0.2) {
-          self.tabBarController?.tabBar.isHidden = true
+         // self.tabBarController?.tabBar.isHidden = true
         };
 
         
