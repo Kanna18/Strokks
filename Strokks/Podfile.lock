@@ -2,17 +2,33 @@ PODS:
   - SDWebImage (4.4.1):
     - SDWebImage/Core (= 4.4.1)
   - SDWebImage/Core (4.4.1)
+  - ZVActivityIndicatorView (0.1.2)
+  - ZVProgressHUD (2.0.0):
+    - ZVActivityIndicatorView
 
 DEPENDENCIES:
   - SDWebImage (~> 4.0)
+  - ZVProgressHUD (from `https://github.com/zevwings/ZVProgressHUD.git`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - SDWebImage
+    - ZVActivityIndicatorView
+
+EXTERNAL SOURCES:
+  ZVProgressHUD:
+    :git: https://github.com/zevwings/ZVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  ZVProgressHUD:
+    :commit: cb37a61400ddc7e7a90f4f4f75e287d87fb6f27e
+    :git: https://github.com/zevwings/ZVProgressHUD.git
 
 SPEC CHECKSUMS:
   SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  ZVActivityIndicatorView: 14668601b0616d2b749004d8fa42913fc813e151
+  ZVProgressHUD: b90892e51d56fb6dd03f8147f158594450ce354c
 
-PODFILE CHECKSUM: 6d6cb180cebc219009161f796ccf0166655b71fa
+PODFILE CHECKSUM: d82a4f2551f4ee4303e7e4a2dba30cee4be65f39
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

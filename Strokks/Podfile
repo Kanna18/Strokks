@@ -6,6 +6,7 @@ target 'Storkks' do
   use_frameworks!
 platform :ios, '8.0'
 pod 'SDWebImage', '~> 4.0'
+pod 'ZVProgressHUD', :git => 'https://github.com/zevwings/ZVProgressHUD.git'
 
   # Pods for Storkks
 

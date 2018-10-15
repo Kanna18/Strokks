@@ -11,6 +11,10 @@
 		33B04CE487B8D0E1CB51BB90 /* Pods_StorkksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC7065208A16C41E8CC0548 /* Pods_StorkksTests.framework */; };
 		9C8328C5CB35E66DC578C68A /* Pods_StorkksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7759B1F5CC4B4B2343387A3 /* Pods_StorkksUITests.framework */; };
 		F61124A52160F0B400901694 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61124A42160F0B400901694 /* SampleViewController.swift */; };
+		F620E80221697F62001FFECC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F620E80121697F62001FFECC /* RegistrationViewController.swift */; };
+		F620E804216981A9001FFECC /* RegistrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F620E803216981A9001FFECC /* RegistrationCell.swift */; };
+		F620E80621698D87001FFECC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F620E80521698D87001FFECC /* LoginViewController.swift */; };
+		F620E8082169C096001FFECC /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F620E8072169C096001FFECC /* OTPViewController.swift */; };
 		F62901C42160EB7F00BE2DCF /* SubMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62901C22160EB7F00BE2DCF /* SubMenuCell.swift */; };
 		F62901C52160EB7F00BE2DCF /* SubMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F62901C32160EB7F00BE2DCF /* SubMenuCell.xib */; };
 		F62ACD3C2133D4AE00679B07 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */; };
@@ -103,6 +107,10 @@
 		B7759B1F5CC4B4B2343387A3 /* Pods_StorkksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorkksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF301EAECEFBFDA4B3D56EFD /* Pods-Storkks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storkks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Storkks/Pods-Storkks.release.xcconfig"; sourceTree = "<group>"; };
 		F61124A42160F0B400901694 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		F620E80121697F62001FFECC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F620E803216981A9001FFECC /* RegistrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCell.swift; sourceTree = "<group>"; };
+		F620E80521698D87001FFECC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F620E8072169C096001FFECC /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		F62901C22160EB7F00BE2DCF /* SubMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuCell.swift; sourceTree = "<group>"; };
 		F62901C32160EB7F00BE2DCF /* SubMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuCell.xib; sourceTree = "<group>"; };
 		F62ACD3B2133D4AE00679B07 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -311,6 +319,9 @@
 				F6BDE65E2112E50200564E8F /* LaunchScreen.storyboard */,
 				F6BDE6612112E50200564E8F /* Info.plist */,
 				F6BDE6A12113117700564E8F /* DeviceManager.swift */,
+				F620E80121697F62001FFECC /* RegistrationViewController.swift */,
+				F620E80521698D87001FFECC /* LoginViewController.swift */,
+				F620E8072169C096001FFECC /* OTPViewController.swift */,
 				F6502509211854A70015AE67 /* MoreViewController.swift */,
 				F6B2A947216072B10087ED85 /* MyTabBarViewController.swift */,
 				F650250B211854B80015AE67 /* BasketViewController.swift */,
@@ -347,6 +358,7 @@
 		F6BDE6842112E51600564E8F /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				F620E803216981A9001FFECC /* RegistrationCell.swift */,
 				F6CC8962215130F000EFC9EB /* DetailsCellOne.swift */,
 				F6CC8963215130F000EFC9EB /* DetailsCellOne.xib */,
 				F6CC895E21512EC100EFC9EB /* DetailsCell.swift */,
@@ -548,10 +560,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Storkks/Pods-Storkks-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ZVActivityIndicatorView/ZVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ZVProgressHUD/ZVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -633,6 +649,7 @@
 				F62901C42160EB7F00BE2DCF /* SubMenuCell.swift in Sources */,
 				F631BAEE21218B7000E19C48 /* RestaurantsData.swift in Sources */,
 				F6BDE69D2112E54C00564E8F /* OrdersCell.swift in Sources */,
+				F620E80221697F62001FFECC /* RegistrationViewController.swift in Sources */,
 				F6BDE6A22113117700564E8F /* DeviceManager.swift in Sources */,
 				F696B83921539C0F002F487B /* StorkksSharedClass.swift in Sources */,
 				F6CC895D214FC02A00EFC9EB /* SideMenuData.swift in Sources */,
@@ -644,10 +661,12 @@
 				F696B837215232B4002F487B /* CategoriesSubList.swift in Sources */,
 				F6CC896021512EC100EFC9EB /* DetailsCell.swift in Sources */,
 				F65EFF1F211D558600DF93AF /* SideMenuViewController.swift in Sources */,
+				F620E80621698D87001FFECC /* LoginViewController.swift in Sources */,
 				F6B2A948216072B10087ED85 /* MyTabBarViewController.swift in Sources */,
 				F6B2A94021600CD00087ED85 /* OrdersViewController.swift in Sources */,
 				F6BDE6932112E54C00564E8F /* ItemDetails2Cell.swift in Sources */,
 				F65EFF1D211D54FC00DF93AF /* SWRevealViewController.m in Sources */,
+				F620E8082169C096001FFECC /* OTPViewController.swift in Sources */,
 				F6CC8967215139A300EFC9EB /* DetailsHeaderView.swift in Sources */,
 				F6BDE69E2112E54C00564E8F /* LabelNameClass.swift in Sources */,
 				F6CC8964215130F000EFC9EB /* DetailsCellOne.swift in Sources */,
@@ -657,6 +676,7 @@
 				F65EFF21211D5D6800DF93AF /* AccountsViewController.swift in Sources */,
 				F6BDE6952112E54C00564E8F /* ItemDetailsCell.swift in Sources */,
 				F68C7CB721229DCA001ACDCB /* ExploreViewController.swift in Sources */,
+				F620E804216981A9001FFECC /* RegistrationCell.swift in Sources */,
 				F69258A52148E5920043F892 /* OffersTableViewController.swift in Sources */,
 				F6A6F2662122CF410073A94F /* TopView.swift in Sources */,
 				F6C57C532154DA5100970DC3 /* CartClass.swift in Sources */,
@@ -836,17 +856,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P8MMY2XZGJ;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WHH4V768P9;
 				INFOPLIST_FILE = "$(SRCROOT)/Storkks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaian.metalByExample;
+				PRODUCT_BUNDLE_IDENTIFIER = O;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Distribution_Rabbithole_New;
 				SWIFT_OBJC_BRIDGING_HEADER = "Storkks/SideMenu/Storkks-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -860,17 +880,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P8MMY2XZGJ;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WHH4V768P9;
 				INFOPLIST_FILE = "$(SRCROOT)/Storkks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gaian.metalByExample;
+				PRODUCT_BUNDLE_IDENTIFIER = O;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = Distribution_Rabbithole_New;
 				SWIFT_OBJC_BRIDGING_HEADER = "Storkks/SideMenu/Storkks-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -15,6 +15,9 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     @IBOutlet weak var lblEmail: UILabel!
     @IBOutlet weak var lblHeader: UIView!
     let arrSource = ["Home","Addresses","Orders","Favorites","Offers","Logout"]
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tblMore.tableFooterView = UIView(frame: .zero)
@@ -30,6 +33,13 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    @IBAction func closeClick(_ sender: Any) {
+        
+    }
+
     
 
     /*
@@ -62,6 +72,9 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         if indexPath.row == 4{
             self.loadOffersTableVC()
+        }
+        if indexPath.row == 5{
+            self.logoutFunction()
         }
 
     }
@@ -118,6 +131,14 @@ class MoreViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func loadFavouritesVC(){
         let favourites = self.storyboard?.instantiateViewController(withIdentifier: "favoutitesVC") as! FavoutitesViewController
         self.navigationController?.pushViewController(favourites, animated: true)
+    }
+    func logoutFunction() {
+//        self.dismiss(animated: true, completion: nil)
+        
+        let VC1 = self.storyboard?.instantiateViewController(withIdentifier: "loginViewController") as! LoginViewController
+        let navController = UINavigationController(rootViewController: VC1) // Creating a navigation controller with VC1 at the root of the navigation stack.
+        self.present(navController, animated:true, completion: nil)
+
     }
     
     

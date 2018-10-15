@@ -20,7 +20,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Storkks/SideMenu/SideMenuViewController.swift"
-            timestampString = "559999215.4133379"
+            timestampString = "560563882.969102"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -68,13 +68,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Storkks/DetailsViewController.swift"
-            timestampString = "560417030.266255"
+            timestampString = "560679034.967234"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "308"
             endingLineNumber = "308"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "tableViewReload(btn:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Storkks/RegistrationViewController.swift"
+            timestampString = "560679136.580816"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "reistrationValidation()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
